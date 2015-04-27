@@ -1,0 +1,27 @@
+.project-year {
+	margin-top: 45px;
+	cursor: pointer;
+}
+
+.project-year h2 {
+	display: inline;
+	font-size: 50px;
+	color: #2c3e50;
+	font-weight: 600;
+}
+
+.project-year i {
+	position: absolute;
+	margin-left: 50px;
+	color: #2c3e50;
+}
+
+.project-year i:hover, .project-year h2:hover {
+	color: #34495e;
+}
+
+.projects {
+	display: none;
+	margin-left: 50px;
+}
+
