@@ -1,15 +1,15 @@
-var flipped = false;
+
 $(document).ready(function() {
     $('#year-list .project-year').click(function() {
 
-        if (flipped == false) {
+        if (this.flipped) {
         	$(this).next('.projects').slideToggle(400);
-        	$(this).find("i").addClass('fa-rotate-180');
-        	flipped = true;
+            $(this).find("i", this).removeClass('fa-rotate-180');
+            this.flipped = false;
         } else {
-        	$(this).next('.projects').slideToggle(400);
-        	$(this).find("i", this).removeClass('fa-rotate-180');
-        	flipped = false;
+            $(this).next('.projects').slideToggle(400);
+            $(this).find("i").addClass('fa-rotate-180');
+            this.flipped = true;
         }
 
     });
