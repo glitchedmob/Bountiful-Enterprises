@@ -1,8 +1,30 @@
+.header {
+	background: url("https://placehold.it/1200x400") no-repeat fixed center center / cover transparent;
+	display: table;
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+
+.header p {
+	margin-right: 400px;
+  margin-left: 400px;
+  font-size: 21px;
+}
+
 .s-panel {
-	border: 2px solid #95a5a6;
+	border: 1px solid #95a5a6;
 	border-radius: 6px;
+	margin-top: 20px;
 }
 
 .s-panel img {
 	padding-top: 10px;
+}
+
+.text-vertical-center h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  font-weight: 700;
 }
