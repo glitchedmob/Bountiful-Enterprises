@@ -19,11 +19,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 	<!-- Custom Fonts -->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 	<!-- Custom CSS -->
 	<link href="../css/global.css" rel="stylesheet">
-	<link href="../css/services.css" rel="stylesheet">
+	<link href="../css/pages/services.css" rel="stylesheet">
 
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -70,25 +70,10 @@
 	<!-- Page Content -->
 	<div class="container">
 
-		<!-- Page Heading/Breadcrumbs -->
-		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header">Services
-					<small>Subheading</small>
-				</h1>
-				<ol class="breadcrumb">
-					<li><a href="index.html">Home</a>
-					</li>
-					<li class="active">Services</li>
-				</ol>
-			</div>
-		</div>
-		<!-- /.row -->
-
 		<!-- Image Header -->
 		<div class="row">
 			<div class="col-lg-12">
-				<img class="img-responsive" src="http://placehold.it/1200x300" alt="">
+				<img class="img-responsive" src="https://placehold.it/1200x300" alt="">
 			</div>
 		</div>
 		<!-- /.row -->
@@ -99,66 +84,134 @@
 			<div class="col-lg-12">
 				<h2 class="page-header">Services Panels</h2>
 			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="panel panel-default text-center">
-					<div class="panel-heading">
-						<span class="fa-stack fa-5x">
-							  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-							  <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
+			<div class="col-sm-6">
+				<div class="panel panel-default text-center s-panel">
+					<center>
+						<img class="img-responsive" src="https://placehold.it/500x300">
+					</center>
 					<div class="panel-body">
 						<h4>Service One</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						<a href="#" class="btn btn-primary">Learn More</a>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#service-1">Service One</button>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="panel panel-default text-center">
-					<div class="panel-heading">
-						<span class="fa-stack fa-5x">
-							  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-							  <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
+			<div class="col-sm-6">
+				<div class="panel panel-default text-center s-panel">
+					<center>
+						<img class="img-responsive" src="https://placehold.it/500x300">
+					</center>
 					<div class="panel-body">
 						<h4>Service Two</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						<a href="#" class="btn btn-primary">Learn More</a>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#service-2">Service Two</button>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="panel panel-default text-center">
-					<div class="panel-heading">
-						<span class="fa-stack fa-5x">
-							  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-							  <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
+			<div class="col-sm-6">
+				<div class="panel panel-default text-center s-panel">
+					<center>
+						<img class="img-responsive" src="https://placehold.it/500x300">
+					</center>
 					<div class="panel-body">
 						<h4>Service Three</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						<a href="#" class="btn btn-primary">Learn More</a>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#service-3">Service Three</button>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="panel panel-default text-center">
-					<div class="panel-heading">
-						<span class="fa-stack fa-5x">
-							  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-							  <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
+			<div class="col-sm-6">
+				<div class="panel panel-default text-center s-panel">
+					<center>
+						<img class="img-responsive" src="https://placehold.it/500x300">
+					</center>
 					<div class="panel-body">
 						<h4>Service Four</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						<a href="#" class="btn btn-primary">Learn More</a>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#service-4">Service Four</button>
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<!-- Service one modal -->
+		<div id="service-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  		<div class="modal-dialog modal-lg">
+    		<div class="modal-content">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      			<h2 class="modal-title">Service One</h2>
+      		</div>
+      		<div class="modal-body">
+      			<center>
+      				<iframe width="640" height="390" src="https://www.youtube.com/embed/jofNR_WkoCE" frameborder="0" showinfo="0" allowfullscreen></iframe>
+      			</center>
+      		</div>
+      		<div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+    		</div>
+  		</div>
+		</div>
+
+		<!-- Service two modal -->
+		<div id="service-2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  		<div class="modal-dialog modal-lg">
+    		<div class="modal-content">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      			<h2 class="modal-title">Service Two</h2>
+      		</div>
+      		<div class="modal-body">
+      			<center>
+      				<iframe width="640" height="390" src="https://www.youtube.com/embed/jofNR_WkoCE" frameborder="0" showinfo="0" allowfullscreen></iframe>
+      			</center>
+      		</div>
+      		<div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+    		</div>
+  		</div>
+		</div>
+
+		<!-- Service three modal -->
+		<div id="service-3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  		<div class="modal-dialog modal-lg">
+    		<div class="modal-content">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      			<h2 class="modal-title">Service Three</h2>
+      		</div>
+      		<div class="modal-body">
+      			<center>
+      				<iframe width="640" height="390" src="https://www.youtube.com/embed/jofNR_WkoCE" frameborder="0" showinfo="0" allowfullscreen></iframe>
+      			</center>
+      		</div>
+      		<div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+    		</div>
+  		</div>
+		</div>
+
+		<!-- Service four modal -->
+		<div id="service-4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  		<div class="modal-dialog modal-lg">
+    		<div class="modal-content">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      			<h2 class="modal-title">Service Four</h2>
+      		</div>
+      		<div class="modal-body">
+      			<center>
+      				<iframe width="640" height="390" src="https://www.youtube.com/embed/jofNR_WkoCE" frameborder="0" showinfo="0" allowfullscreen></iframe>
+      			</center>
+      		</div>
+      		<div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+    		</div>
+  		</div>
 		</div>
 
 		<!-- Service Tabs -->
