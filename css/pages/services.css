@@ -28,3 +28,14 @@
   font-size: 4.5em;
   font-weight: 700;
 }
+
+.close {
+	font-size: 40px;
+	color: #333;
+	opacity: .6;
+}
+
+.close:hover {
+	color: #c0392b;
+	opacity: .7;
+}
