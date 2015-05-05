@@ -178,28 +178,14 @@
 
 @media(max-width:768px) {
   .header p, .service-one p, .service-two p, .service-three p, .service-four p {
-    margin-right: 150px;
-    margin-left: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
     font-size: 16px;
   }
 
   .header h1, .service-one h1, .service-two h1, .service-three h1, .service-four h1 {
-    margin-right: 150px;
-    margin-left: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
     font-size: 2.6em;
-  }
-}
-
-@media(max-width:512px) {
-  .header p, .service-one p, .service-two p, .service-three p, .service-four p {
-    margin-right: 50px;
-    margin-left: 50px;
-    font-size: 15px;
-  }
-
-  .header h1, .service-one h1, .service-two h1, .service-three h1, .service-four h1 {
-    margin-right: 50px;
-    margin-left: 50px;
-    font-size: 2.3em;
   }
 }
