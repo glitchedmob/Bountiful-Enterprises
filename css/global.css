@@ -5,6 +5,9 @@
  */
 
 /* Global Styles */
+html, body {
+	height: 100%;
+}
 
 body {
 	padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
@@ -83,3 +86,4 @@ body {
   background-color: rgba(0,0,0,.35);
   text-shadow: 3px 3px 3px black;
 }
+
