@@ -16,11 +16,11 @@
 }
 
 .service-two {
-	background: url("../../images/services/tekla.jpg") no-repeat center center / cover transparent;
+	background: url("../../images/services/burn-table.jpg") no-repeat center center / cover transparent;
 }
 
 .service-three {
-	background: url("../../images/services/burn-table.jpg") no-repeat fixed center center / cover transparent;
+  background: url("../../images/services/tekla.png") no-repeat fixed center bottom transparent;
 }
 
 .service-four {
