@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+  
+        <title>Stockton Tiger Band</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+       <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    </head>
+
+    <body>
+    <style> 
+    a:link    {color:black; background-color:transparent; text-decoration:none}
+a:visited {color:#6C7A89; background-color:transparent; text-decoration:none}
+a:hover   {color:#96281B; background-color:transparent; text-decoration:none}
+a:active  {color:#16a085; background-color:transparent; text-decoration:none}
+
+
+ 
+body
+{
+
+background-image:url('https://docs.google.com/drawings/d/1QPwe_L7yMBBOE6G-dX48M7I6PtzXuvKhsp9e0gHfln0/pub?w=502&amp;h=421');
+background-repeat:no-repeat;
+background-position:right top;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+
+
+</style>
+
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+                     <a class="navbar-brand" href="#">Band Song Page</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a>
+                        </li>
+                        <li><a href="https://sites.google.com/a/stockton.k12.mo.us/tiger-band/">Official Band Page</a>
+                        <li><a href="http://www.stockton.k12.mo.us/">Stockton Website</a>
+                        <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""></a>
+                                </li>
+                                <li><a href="http://www.stockton.k12.mo.us/">Stockton Website</a>
+                                </li>
+                                <li><a href="#"></a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Other unrelated Projects</li>
+                                <li><a href="game.html">Plane Game</a>
+                                  <li><a href="indexcopy.html">The old webpage</a>
+                                </li>
+                                
+                                <li><a href="http://pinto-studio.appspot.com/">Pinto Studio</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div class="container theme-showcase">
+
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron boxright itemseven">
+                 <h1>Welcome to the Links page!</h1>
+
+            </div>
+       
+</body>
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+    <script type="text/javascript"> 
+
+    $(document).ready(function() {  
+    //source file is https://docs.google.com/spreadsheet/ccc?key=0Ak0qDiMLT3XddHlNempadUs1djdkQ0tFLWF6ci1rUUE   
+    //https://docs.google.com/spreadsheets/d/1see3vgo1-3eC82uX7VRoyqetxfvdKgF9UYswmu9RbzI/edit?usp=sharing
+    //https://docs.google.com/spreadsheets/d/1ev6O_LWECqxLbP9sqP7tcda_oti-5MBdrGx6297h6Yk/edit?usp=sharing
+    $(function listBooks() {    
+    $.getJSON( "https://spreadsheets.google.com/feeds/list/15V657-Bi3arTLHvFJfbhe_UT3-lIcxKRST3y38bT0NY/od6/public/values?alt=json-in-script&callback=?",
+        function (data) {
+        
+            $('div#book-list').append('<div class="itemseven"></div>');
+            $.each(data.feed.entry, function(i,entry) { 
+
+                var item = '<span style="display:none" >' + entry.id.$t + '</span>';
+                var number = '<span style="display:none" >' + entry.id.$t + '</span>';
+            
+               item += '<a href='+entry.gsx$table.$t+' target="_blank">' + entry.gsx$participanteven.$t+'</a>';  
+                
+                 if (entry.gsx$table.$t!='') {   
+                    number += '<p></p>'       
+                $('.itemseven').append('<p>' + number + '</p>');
+                }       
+                $('.itemseven').append('<p>' + item + '</p>'); 
+
+                
+                
+                });
+            });
+        });
+    });
+    </script>
+
+         
+</html>
