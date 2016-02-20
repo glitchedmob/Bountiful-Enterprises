@@ -11,7 +11,8 @@ html, body {
 
 body {
 	padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
+  background-color: #E1E1E1;
+} 
 
 .row {
 	margin: 0px;
@@ -26,13 +27,13 @@ body {
 }
 
 .navbar-inverse {
-	background-color: #2980b9;
-	border-color: #3498db;
+	background-color: #1F3A93 ;
+	border-color: #1F3A93 ;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
 	color: #ecf0f1;
-	background-color: #3498db;   
+	background-color: #38539B ;   
 }
 
 .navbar-inverse .navbar-brand {
@@ -48,7 +49,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-	background-color: #3498db;
+	background-color: #38539B ;
 	color: #ecf0f1;
 }
 

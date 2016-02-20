@@ -9,6 +9,25 @@ jQuery(document).ready(function($) {
 		// Cache the selector
 		var the_dom = $(this);
 
+		var zIndex = 2;
+		
+		//finds the z-index of the element that was clicked
+		window.getZIndex = function (e) {      
+		  var z = window.document.defaultView.getComputedStyle(e).getPropertyValue('z-index');
+		  if (isNaN(z)) return window.getZIndex(e.parentNode);
+		  return z; 
+		};
+
+		//the above function returns an error if the current element does not have a z-index property
+		//this try block tests for the error and if it finds it, its sets the z-index appropriately
+		try {
+			var currentZIndex = window.getZIndex($(this)[0]);
+			zIndex = currentZIndex+1;
+		} catch(err) {
+			zIndex = 2
+		}
+
+
 		// Get the limit for ripple effect
 		var limit = the_dom.attr( 'data-ripple-limit' );
 
@@ -47,7 +66,7 @@ jQuery(document).ready(function($) {
 			'position' 			: 'absolute',
 			'top'			 	: the_dom_offset.top,
 			'left'	 			: the_dom_offset.left,
-			'z-index' 			: 10000,
+			'z-index' 			: zIndex,
 			'overflow' 			: 'hidden',
 			'background-clip'	: 'padding-box',
 			'-webkit-border-radius' : radius,

@@ -1,3 +1,9 @@
+#year-list {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .project-year {
 	margin-top: 45px;
 	cursor: pointer;
@@ -11,9 +17,18 @@
 }
 
 .project-year i {
-	position: absolute;
-	margin-left: 50px;
+	position: relative;
 	color: #2c3e50;
+  -webkit-transition: -webkit-transform ease 400ms;
+  transition: -webkit-transform ease 400ms;
+  transition: transform ease 400ms;
+  transition: transform ease 400ms, -webkit-transform ease 400ms;
+}
+
+.i-close {
+	ms-transform: rotate(-135deg); /* IE 9 */
+  -webkit-transform: rotate(-135deg); /* Chrome, Safari, Opera */
+  transform: rotate(-135deg);
 }
 
 .project-year i:hover, .project-year h2:hover {
@@ -22,6 +37,6 @@
 
 .projects {
 	display: none;
-	margin-left: 50px;
 }
+
 
