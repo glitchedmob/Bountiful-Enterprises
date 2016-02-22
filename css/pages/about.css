@@ -1,6 +1,9 @@
-.img-ripple {
-	border-radius: 150px;
+.mtt-img {
 	border: 2px solid black;
+}
+
+.col-lg-12 h1, .col-lg-12 h2 {
+  margin-bottom: 50px;
 }
 
 .cd-testimonials-wrapper {
@@ -538,4 +541,17 @@ blockquote:nth-of-type(even) footer:after {
 
 #slide-5 {
   background: url("../../images/about/slide-5.jpg") no-repeat center center;
+}
+
+.services-callout {
+ text-align: center;
+}
+
+.services-callout p {
+  font-size: 18px;
+}
+
+.services-callout a {
+  font-size: 28px;
+  padding: 5px 55px;
 }
