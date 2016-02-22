@@ -31,7 +31,7 @@
   padding-top: 8px;
   margin-left: -25px;
   background: rgba(32, 32, 34, 0.9);
-  background: #e30613;
+  background: #6C7A89;
   font-family: "Georgia", serif;
   color: white;
   font-size: 70px;
@@ -114,17 +114,19 @@
 .cd-author .cd-author-info {
   text-align: left;
   line-height: 1.2;
-}
-
-.cd-author .cd-author-info li:first-child {
-  font-size: 14px;
-  font-size: 0.875rem;
+  position: relative;
+  left: -50px;
 }
 
 .cd-author .cd-author-info li:last-child {
   font-size: 12px;
   font-size: 0.75rem;
   color: #fff;
+}
+
+.cd-author-info li {
+  list-style: none;
+  font-size: 1.3em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -135,11 +137,6 @@
 
   .cd-author .cd-author-info {
     line-height: 1.4;
-  }
-
-  .cd-author .cd-author-info li:first-child {
-    font-size: 16px;
-    font-size: 1rem;
   }
 
   .cd-author .cd-author-info li:last-child {
@@ -253,11 +250,15 @@
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: .8em;
   -webkit-transition: color, 0.2s;
   -moz-transition: color, 0.2s;
   transition: color, 0.2s;
+}
+
+.cd-see-all:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .cd-testimonials-all {
@@ -419,4 +420,122 @@
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.testimonals-modal {
+  width: 700px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+  margin: 0 auto;
+  padding: 1em;
+  border-left: 5px solid #999;
+}
+
+blockquote:before {
+  display: none;
+}
+
+blockquote:not(:first-of-type) {
+  margin-top: .5em;
+}
+
+blockquote p {
+  color: #555;
+  font-size: 12pt;
+  line-height: 1.4;
+  font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+}
+
+blockquote footer {
+  margin-top: .5em;
+  padding: 0;
+  color: #777;
+  font-size: 12pt;
+  text-align: left;
+  font-style: italic;
+}
+
+blockquote footer:before {
+  content: '— ';
+}
+
+blockquote:nth-of-type(even) {
+  text-align: right;
+  border-left: none;
+  border-right: 5px solid #999;
+}
+
+blockquote:nth-of-type(even) footer {
+  text-align: right;
+}
+
+blockquote:nth-of-type(even) footer:before {
+  content: '';
+}
+
+blockquote:nth-of-type(even) footer:after {
+  content: ' —';
+}
+
+@element 'blockquote' and (min-width: 300px) {
+  blockquote {
+    padding: 1em 20% 1em 1em;
+  }
+
+  blockquote p {
+    font-size: 14pt;
+  }
+
+  blockquote:nth-of-type(even) {
+    padding: 1em 1em 1em 20%;
+  }
+}
+
+#about-slideshow {
+  width: 100%;
+  height: 80%;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-img {
+  display: block;
+  width: 100%;
+  height:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#slide-1 {
+  background: url("../../images/about/slide-1.jpg") no-repeat center center;
+}
+
+#slide-2 {
+  background: url("../../images/about/slide-2.jpg") no-repeat center center;
+}
+
+#slide-3 {
+  background: url("../../images/about/slide-3.jpg") no-repeat center center;
+}
+
+#slide-4 {
+  background: url("../../images/about/slide-4.jpg") no-repeat center center;
+}
+
+#slide-5 {
+  background: url("../../images/about/slide-5.jpg") no-repeat center center;
 }
